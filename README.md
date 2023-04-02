@@ -46,3 +46,44 @@ Processing Options:
                         Show any supporting notes
   -ns, --no-summary     Show aa summary of processing
 ```
+
+### Example
+
+```cmd
+python gitwip.py -d c:\dev\work -m dir_of_repos -pop -ponp -sonp -sood -suc
+```
+
+#### Output
+
+```text
+Found 15 directories
+repo1
+  Branch: feature/fix-build-issues
+  Ahead by 2 commits
+repo2
+  Branch: feature/summary-details-publishing
+repo3
+  Branch: bugfix/clipboard-access-from-iframe
+  Ahead by 38 commits
+repo4
+  Branch: feature/required-files
+repo5
+  Branch: feature/batch-size-parameter
+  Untracked: src2/DeadLetterMessageProcessor2/DeadLetterMessageProcessor2.csproj
+  Untracked: src2/DeadLetterMessageProcessor2/Program.cs
+  Untracked: src2/DeadLetterMessageProcessor2/Properties/launchSettings.json
+
+
+Summary
+=======
+Total Repos : 15
+
+Repos printed : 5
+
+Repos with uncommitted files : 1
+   repo5
+
+Repos ahead of remote : 2
+   repo1
+   repo3
+```
