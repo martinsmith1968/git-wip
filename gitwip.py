@@ -255,7 +255,7 @@ def _main():
     parser = MyParser(description="Analyse a GIT repo")
     parser.add_argument("-v", "--version", action='version', version='%(prog)s 1.0')
     parser.add_argument("-d", "--directory", dest="directory", required=True, help="The directory to analyze")
-    parser.add_argument("-m", "--mode", dest="mode", default='repo', choices=['repo', 'dir_of_repos', 'dir_of_dir_of_repos', 'tree'], help="The processing mode")
+    parser.add_argument("-m", "--mode", dest="mode", default='repo', choices=['repo', 'dir_of_repos', 'dir_of_dir_of_repos', 'tree_search'], help="The processing mode")
     parser.add_argument("-w", "--directory-wildcard", dest="directory_wildcard", default="*", help="The wildcard directory pattern to use for repo directory selection")
     parser.add_argument("-b", "--primary-branches", dest="primary_branch", help="The branch name to use as primary")
     parser.add_argument("-o", "--default-origins", dest="default_origins", help="The origin names to use by default")
